@@ -7,11 +7,12 @@
 }
 
 .search-box{
-    width: 345px;
+    width: 308px;
     background: #fff;
-    margin: 3px auto 6px;
+    margin: 5px auto 12px;
     /* border-radius: 61px; */
-    margin-left: 212px;
+    margin-left: 110px;
+    margin-top: -8px;
 
 }
 
@@ -252,8 +253,8 @@ h4{
 }
 
 .container p{
-    margin-left: 4px;
-    margin-top: 24px;
+    margin-left: 54px;
+    margin-top: 0px;
     font-size: 26px;
 }
 .unit select{
