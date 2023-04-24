@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: montserrat;
+    background-color: beige;
+}
+
+.ul{
+    float: right;
+    list-style-type: none;
+    margin-top: -101px;
+    min-height: 66px;
+    margin-right: 64px;
+    font-size: 31px;
+}
+
+.ul li{
+    display: inline-block;
+}
+
+.ul li a{
+    text-decoration: none;
+    color: darkred;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+.ul li a:hover,.ul li a:active{
+    background-color:bisque ;
+    color: black;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.wrapper h1{
+    padding: 30px 0;
+    text-align: uppercase;
+    font-family: cursive;
+}
+
+.fav{
+    flex: 75%;
+
+}
+.box{
+    display: flex;
+    width: 100%;
+    height: 208px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background: #fff;
+    transition: all .6s ease;
+    box-shadow: rgba(100, 100, 111, 0.2)0 7px 29px 0;
+}
+
+.box:hover{
+    transform: scale(1.02);
+}
+
+.box img{
+    width: 300px;
+    height: 202px;
+    padding: 10px 4px 5px 0px;
+    object-fit: contain;
+
+}
+.content{
+    padding: 20px;
+    position: relative;
+    width: 100%;
+}
+.content h3{
+    margin-bottom: 30px;
+}
+
+.Color{
+    margin-top: 13px;
+
+}
+
+
+.btn-area {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 25px;
+    background-color: dimgray;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+
+    
+}
+i{
+   
+    color: ghostwhite;
+    font-size: 16px;
+}
+
+.btn3-area {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    padding: 10px 25px;
+    background-color: lightcoral;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.btn-area:hover{
+    background-color: darkcyan;
+    color: #fff;
+}
+
+.btn3-area:hover{
+    background-color: plum ;
+    color: #fff;
+}
+
+footer{
+    text-align: center;
+    
+    font-size: 17px;
+    /* background: burlywood; */
+    padding: 6px 5px 6px 5px;
+
+}

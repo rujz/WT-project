@@ -1,0 +1,130 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: math;
+}
+
+body{
+    font-family: montserrat;
+    background-color: beige;
+}
+.section{
+    width: 100%;
+    min-height: 90vh;
+    background-color: #ddd;
+    max-width: 1000px;
+    margin: 0px auto;
+
+}
+.container{
+    font-size: x-large;
+    width: 82%;
+    display: block;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 10px;
+}
+.ul{
+    float: right;
+    list-style-type: none;
+    margin-top: -101px;
+    min-height: 66px;
+    margin-right: 64px;
+    font-size: 31px;
+}
+
+.ul li{
+    display: inline-block;
+}
+
+.ul li a{
+    text-decoration: none;
+    color: darkred;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+.ul li a:hover,.ul li a:active{
+    background-color:bisque ;
+    color: black;
+}
+.content-section{
+    float: left;
+    width: 55%;
+}
+
+.image-section{
+    float: right;
+    width: 33%;
+
+}
+.image-section img{
+    width: 85%;
+    height: auto;
+
+}
+
+.content-section .title{
+    text-transform: uppercase;
+    font-size: 28px;
+}
+
+.content-section .content h3{
+    margin-top: 15px;
+    color: #5d5d5d;
+    font-size: unset;
+}
+
+.content-section .content p{
+    margin-top:10px;
+    font-family: sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.content-section .content .button a{
+    background-color: indianred;
+    padding: 4px 25px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+
+.content-section .content .button a:hover{
+    background-color: #a52a2a;
+    color: #fff;
+}
+
+.content-section .social{
+    margin-top: 40px;
+
+}
+
+.content-section .social p{
+    font-size: large;
+    margin-bottom: revert;
+}
+
+.content-section .social i{
+    color: #a52a2a;
+    font-size: 30px;
+    padding: 0px 10px;
+}
+
+.content-section .social i:hover{
+    color: #3d3d3d;
+}
+
+
+footer{
+    text-align: center;
+    
+    font-size: 17px;
+    /* background: burlywood; */
+    padding: 6px 5px 6px 5px;
+
+}
