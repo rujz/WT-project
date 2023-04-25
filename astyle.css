@@ -128,3 +128,6 @@ footer{
     padding: 6px 5px 6px 5px;
 
 }
+.section{
+    position: relative;
+}
