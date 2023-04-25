@@ -3,11 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fstyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
     <title>My favorites</title>
+    <script>
+        $(document).ready(function(){
+            $('.color').click(function(){
+            console.log("clicked");
+            let colorNameClass = this.className;
+            let colorName = colorNameClass.slice(colorNameClass.indexOf('_') + 1, colorNameClass.length);
+            let type = colorNameClass.split(' ')[2]
+            let color = colorName.split(' ')[1].split('-')[1];
+            console.log(colorNameClass.split(' '));
+            if(type == "sling")
+            $(".image").attr("src",`4_${color}.jpeg`)
+
+            else if (type == "sli")
+            $(".bagimg").attr("src",`8_${color}.jpeg`)
+
+            else if (type == "duffelb")
+            $(".bag3img").attr("src",`6_${color}.jpeg`)
+
+            else if (type == "adi")
+            $(".bag4img").attr("src",`7.jpeg`)
+            })
+        })
+
+        $(document).ready(function(){
+            $('.color').click(function(){
+            console.log("clicked");
+            let colorNameClass = this.className;
+            console.log(colorNameClass);
+            let colorName = colorNameClass.slice(colorNameClass.indexOf('_') + 1, colorNameClass.length);
+            let color = colorName.split(' ')[1].split('-')[1];
+            
+            })
+        })
+        
+
+    </script>
 </head>
 <body>
     <div class="navbar">
@@ -27,14 +64,20 @@
         <h1>My Favorites</h1>
         <div class="fav">
             <div class="box">
-                <img src="D:\WT project\4.jpeg" >
+                <img class="image" src="D:\WT project\4_brown.jpeg" >
                 <div class="content">
                     <h3>Orca - The Curvy sling bag</h3>
                     <h2> Rs 1299.00</h2>
-                    <p class="Color"> Colour: <select><option value="1">Brown</option>
+                    <div class = "color-groups">
+                        <div class = "color color-brown active-color sling "></div>
+                        <!-- <div class = "color color-black school"></div>
+                        <div class = "color color-blue school"></div> -->
+                        
+                      </div>
+                    <!-- <p class="Color"> Colour: <select><option value="1">Brown</option>
                         <option value="2">Maroon</option>
                             <option value="3">Black</option>
-                    </select></p>
+                    </select></p> -->
 
                     <p class="btn-area">
                         <i class='bx bx-cart'></i>
@@ -51,14 +94,20 @@
                 </div>
             </div>
             <div class="box">
-                <img src="D:\WT project\5.jpeg" alt="">
+                <img class="bagimg" src="D:\WT project\8_brown.jpeg" alt="">
                 <div class="content">
                     <h3>HAUTE SAUCE by Campus Sutra</h3>
                     <h2> Rs 700.00</h2>
-                    <p class="Color"> Colour: <select><option value="1">Cream</option>
+                    <div class = "color-groups">
+                        <div class = "color color-brown active-color sli "></div>
+                         <div class = "color color-purple sli"></div>
+                        <!-- <div class = "color color-blue sli"></div>  -->
+                        
+                      </div>
+                    <!-- <p class="Color"> Colour: <select><option value="1">Cream</option>
                         <option value="2">Blue</option>
                             <option value="3">Grey</option>
-                    </select></p>
+                    </select></p> -->
                                  
                     <p class="btn-area">
                         <i class='bx bx-cart'></i>
@@ -72,14 +121,20 @@
                 </div>
             </div>
             <div class="box">
-                <img src="D:\WT project\6.jpeg" alt="">
+                <img class="bag3img" src="D:\WT project\6_blue.jpeg" alt="">
                 <div class="content">
                     <h3>TRINITY - Gym Duffel Bags</h3>
                     <h2> Rs 1138.00</h2>
-                    <p class="Color"> Colour: <select><option value="1">Blue</option>
+                    <div class = "color-groups">
+                        <div class = "color color-blue active-color duffelb"></div>
+                        <div class = "color color-orange duffelb"></div>
+                        <div class = "color color-green duffelb"></div>
+                        <div class = "color color-red duffelb"></div>
+                      </div>
+                    <!-- <p class="Color"> Colour: <select><option value="1">Blue</option>
                         <option value="2">Red</option>
                             
-                    </select></p>
+                    </select></p> -->
                        
                     <p class="btn-area">
                         <i class='bx bx-cart'></i>
@@ -93,13 +148,19 @@
                 </div>
             </div>
             <div class="box">
-                <img src="D:\WT project\7.jpeg" alt="">
+                <img class ="bag4img" src="D:\WT project\7.jpeg" alt="">
                 <div class="content">
                     <h3>Adidas Daily Laptop Backpack</h3>
                     <h2> Rs 1399.00</h2>
-                    <p class="Color"> Colour: <select><option value="1">Black</option>
+                    <div class = "color-groups">
+                        <div class = "color color-black active-color adi "></div>
+                        <!-- <div class = "color color-black school"></div>
+                        <div class = "color color-blue school"></div> -->
+                        
+                      </div>
+                    <!-- <p class="Color"> Colour: <select><option value="1">Black</option>
                         <option value="2">Blue</option>
-                    </select></p>
+                    </select></p> -->
                                  
                     <p class="btn-area">
                         <i class='bx bx-cart'></i>
