@@ -3,17 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cart</title>
     <link rel="stylesheet" href="cstyle.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script>
+        $(document).ready(function(){
+            $('.color').click(function(){
+            console.log("clicked");
+            let colorNameClass = this.className;
+            console.log(colorNameClass);
+            let colorName = colorNameClass.slice(colorNameClass.indexOf('_') + 1, colorNameClass.length);
+            let color = colorName.split(' ')[1].split('-')[1];
+            $(".image").attr("src",`1_${color}.jpeg`)
+            })
+        })
+        
+
+    </script>
 </head>
 <body>
     <div class="navbar">
         <div class="logo">
             <img src="D:\WT project\_logo2.png" width="125px" >
-        </div>
-        <div class="ul">
+        </div>        <div class="ul">
             <li><a href="D:\WT project\index.html">Home</a></li>
             <li><a href="D:\WT project\about.html"> About </a></li>
             <li><a href="D:\WT project\fav.html"> Favorites </a></li>
@@ -26,7 +40,7 @@
         <div class="project">
             <div class="shop">
                 <div class="box">
-                    <img src="D:\WT project\1_grey.jpeg" >
+                    <img class="image" src="D:\WT project\1_grey.jpeg" >
                     <!-- <img src="D:\WT project\1_grey.jpeg" > -->
                     <div class="content">
                         <h3>Urbanic - Solid outdoor backpack</h3>
